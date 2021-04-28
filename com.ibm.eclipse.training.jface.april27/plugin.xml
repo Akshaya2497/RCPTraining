@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.ibm.eclipse.training.jface.april27.category"
+            name="MyViews">
+      </category>
+      <view
+            category="com.ibm.eclipse.training.jface.april27.category"
+            class="com.ibm.eclipse.training.jface.april27.MyView"
+            icon="icons/sample.png"
+            id="com.ibm.eclipse.training.jface.april27.view.myview"
+            name="MyView"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jobs
+Bundle-SymbolicName: com.ibm.eclipse.training.jface.jobs;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ibm.eclipse.training.jface.jobs.Activator
+Bundle-Vendor: IBM
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: com.ibm.eclipse.training.jface.jobs
+Bundle-ActivationPolicy: lazy

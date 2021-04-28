@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.ibm.eclipse.training.jface.editors.april28.MyTextEditor"
+            default="false"
+            extensions="myeditor , txt"
+            icon="icons/sample.png"
+            id="com.ibm.eclipse.training.jface.editors.april28.editor2"
+            name="My Editor">
+      </editor>
+   </extension>
+
+</plugin>

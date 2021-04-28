@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="com.ibm.eclipse.training.jface.april27.category"
+            class="com.ibm.eclipse.training.jface.viewers.april27.MyListViewer"
+            id="com.ibm.eclipse.training.jface.viewers.april27.mylistviwer"
+            name="MyListView"
+            restorable="true">
+      </view>
+      <view
+            category="com.ibm.eclipse.training.jface.april27.category"
+            class="com.ibm.eclipse.training.jface.viewers.april27.MyTableViewer"
+            id="com.ibm.eclipse.training.jface.viewers.april27.view5"
+            name="My Table View"
+            restorable="true">
+      </view>
+      <view
+            category="com.ibm.eclipse.training.jface.april27.category"
+            class="com.ibm.eclipse.training.jface.viewers.april27.MyTreeViewer"
+            id="com.ibm.eclipse.training.jface.viewers.april27.view6"
+            name="My Tree View"
+            restorable="true">
+      </view>
+      <view
+            category="com.ibm.eclipse.training.jface.april27.category"
+            class="com.ibm.eclipse.training.jface.viewers.april27.MyTableViewerWithColumns"
+            id="com.ibm.eclipse.training.jface.viewers.april27.view7"
+            name="My Table With Columns"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>

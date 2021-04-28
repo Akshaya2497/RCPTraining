@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model Application
+Bundle-SymbolicName: com.ibm.eclipse.training.jface.model.april27
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: IBM
+Automatic-Module-Name: com.ibm.eclipse.training.jface.model.april27
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: com.ibm.eclipse.training.jface.model.april27

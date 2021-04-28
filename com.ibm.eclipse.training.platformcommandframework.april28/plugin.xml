@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            description="Command With No Handler"
+            id="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+            name="CommandWithNotHandler">
+      </command>
+      <command
+            defaultHandler="com.ibm.eclipse.training.platformcommandframework.handler.april28.DefaultCommandHandler"
+            id="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+            name="Default Command Handler">
+      </command>
+      <command
+            description="Command With Specific Handler"
+            id="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+            name="Command With Specific Handler">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar:mytoolbar">
+         <toolbar
+               id="com.ibm.eclipse.training.platformcommandframework.april28.toolbar1">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               icon="icons/default.gif"
+               label="IBM Training"
+               tooltip="Custom Menu items">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
+         <menu
+               label="PopupMenu">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.jdt.ui.PackageExplorer">
+         <command
+               commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+               icon="icons/default.gif"
+               label="Command with no handler"
+               style="push">
+         </command>
+         <command
+               commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+               icon="icons/default.gif"
+               label="Command With Default Handler"
+               style="push">
+         </command>
+         <command
+               commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+               icon="icons/default.gif"
+               label="Command With Specific Handler"
+               style="push"
+               tooltip="Commands With Specific Handler">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.jdt.ui.PackageExplorer">
+         <menu
+               icon="icons/default.gif"
+               id="ibm.training.pkgexplorer"
+               label="IBM Training"
+               tooltip="Custom Menu items">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer?before=group.new">
+         <menu
+               icon="icons/default.gif"
+               id="ibm.training.beforenew"
+               label="IBM Training"
+               tooltip="Custom Menu items">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer?after=group.new">
+         <menu
+               icon="icons/default.gif"
+               id="ibm.training.afternew"
+               label="IBM Training 2"
+               tooltip="Custom Menu items">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer?endof=group.new">
+         <menu
+               icon="icons/default.gif"
+               id="ibm.training.endofnew"
+               label="IBM Training"
+               tooltip="Custom Menu items">
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithnohandler"
+                  icon="icons/default.gif"
+                  label="Command with no handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.command2"
+                  icon="icons/default.gif"
+                  label="Command With Default Handler"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+                  icon="icons/default.gif"
+                  label="Command With Specific Handler"
+                  style="push"
+                  tooltip="Commands With Specific Handler">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.ibm.eclipse.training.platformcommandframework.handler.april28.SpecificCommandHandler"
+            commandId="com.ibm.eclipse.training.platformcommandframework.april28.commandwithspecifichandler"
+            helpContextId="Command With Specific Handler">
+      </handler>
+      <handler
+            commandId="com.ibm.eclipse.training.platformcommandframework.april28.handler5">
+      </handler>
+   </extension>
+
+</plugin>

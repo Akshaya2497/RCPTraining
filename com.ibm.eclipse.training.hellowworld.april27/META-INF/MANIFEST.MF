@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: April27
+Bundle-SymbolicName: com.ibm.eclipse.training.hellowworld.april27;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ibm.eclipse.training.hellowworld.april27.Activator
+Bundle-Vendor: IBM
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.apache.felix.scr,
+ org.eclipse.equinox.event
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: com.ibm.eclipse.training.hellowworld.april27
+Bundle-ActivationPolicy: lazy

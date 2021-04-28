@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: April27
+Bundle-SymbolicName: com.ibm.eclipse.training.basicwidgets.april27
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ibm.eclipse.training.basicwidgets.april27.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.swt;bundle-version="3.104.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

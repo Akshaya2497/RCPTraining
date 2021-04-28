@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Sample Category"
+            id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.category">
+      </category>
+      <command
+            name="Sample Command"
+            categoryId="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.category"
+            id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.sampleCommand"
+            class="com.ibm.eclipse.training.helloworldrcp.april27.plugin.handlers.SampleHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="Sample Menu"
+               mnemonic="M"
+               id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.menus.sampleMenu">
+            <command
+                  commandId="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.sampleCommand"
+                  mnemonic="S"
+                  id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.menus.sampleCommand">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.toolbars.sampleToolbar">
+            <command
+                  commandId="com.ibm.eclipse.training.helloworldrcp.april27.plugin.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  tooltip="Say hello world"
+                  id="com.ibm.eclipse.training.helloworldrcp.april27.plugin.toolbars.sampleCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
